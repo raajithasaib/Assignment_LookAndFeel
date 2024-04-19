@@ -1,123 +1,150 @@
-
-/* Basic styling for the navigation menu */
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  background-color: #007bff;
-  padding: 10px;
+body {
+  font-family: 'Arial', sans-serif;
 }
-
-nav li {
-  margin-right: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #0056b3;
-}
-
-/* Styling for the jumbotron section */
-.jumbotron {
-  background-color: #f8f9fa;
+.info-section {
+  position: relative;
+  margin-bottom: 30px;
   padding: 20px;
-  text-align: center;
+  color: #fff; /* Assuming white text for better readability */
 }
 
-.jumbotron h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
+.info-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('/Users/raajithasai/Projects/Assignment_LookAndFeel/img/d6.jpeg'); /* The path to your image */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* Adjust for desired transparency level */
+  z-index: -1;
 }
 
-.jumbotron .lead {
-  font-size: 18px;
-  color: #333;
-}
 
-.jumbotron .btn-primary {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
+/* Add a semi-transparent overlay to text for better readability */
+section h2, section p {
+  background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
+  color: white;
+  padding: 10px;
   border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
 }
 
-.jumbotron .btn-primary:hover {
+/* Adjust the button styling for better visibility */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
   background-color: #0056b3;
 }
 
-/* Styling for the three columns */
-.row {
+
+nav {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
-}
-
-.col-md-4 {
-  flex-basis: 30%;
+  align-items: center;
   padding: 10px;
-  text-align: center;
+  background-color: #f0f0f0;
 }
 
-.col-md-4 img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
+nav div,
+nav a {
+  margin: 5px;
 }
 
-.col-md-4 h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.col-md-4 p {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.col-md-4 .btn-default {
-  background-color: #f8f9fa;
-  color: #007bff;
-  border: 1px solid #007bff;
-  padding: 8px 16px;
-  border-radius: 5px;
+#nav-links a,
+#user-links a {
   text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s, color 0.3s;
+  padding: 5px 10px;
+  color: #333;
 }
 
-.col-md-4 .btn-default:hover {
+#user-links a {
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+section {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
   background-color: #007bff;
-  color: #fff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-/* main.css */
-
-/* Existing styles (from previous response) */
-
-/* Styling for login and register buttons */
-.btn-login,
-.btn-register {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
+button:hover {
+  background-color: #0056b3;
 }
 
-.btn-login:hover,
-.btn-register:hover {
-    background-color: #0056b3;
+.info-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f9f9f9; /* light grey background for the section */
 }
 
+.info-image {
+  flex: 1;
+  padding: 10px;
+}
+
+.info-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Rounded corners for the image */
+}
+
+.info-content {
+  flex: 2;
+  padding: 10px;
+  text-align: left; /* Aligns the text to the left */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .info-section {
+      flex-direction: column;
+  }
+
+  .info-content {
+      order: 1; /* Text content goes above the image on small screens */
+  }
+
+  .info-image {
+      order: 2;
+      width: 100%;
+  }
+
+  .info-image img {
+      width: 100%; /* Full width of the container */
+  }
+}
+
+/* Other styles remain the same */
+
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+}

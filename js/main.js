@@ -1,14 +1,14 @@
-/**
- * Your JS code here
- */
+function findDoctors() {
+  // Implement the logic to find doctors
+  alert("Redirecting to find doctors...");
+}
 
-/**
- * Sample code
- */
-document.addEventListener('DOMContentLoaded', function() {
-  var ulElement = document.getElementById('links');
-  var liElement = document.createElement('li');
-  liElement.appendChild(document.createTextNode('created by main.js'));
+function createAppointment() {
+  // Implement the logic to create an appointment
+  alert("Redirecting to appointment creation...");
+}
 
-  ulElement.appendChild(liElement);
-});
+function viewStatistics() {
+  // Implement the logic to view statistics
+  alert("Redirecting to view statistics...");
+}
