@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Form</title>
+    <link rel="stylesheet" href="/Users/raajithasai/Projects/Assignment_LookAndFeel/css/appointmentindex.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/Users/raajithasai/Projects/Assignment_LookAndFeel/index.html">Hospital</a></li>
+            <li><a href="/Users/raajithasai/Projects/Assignment_LookAndFeel/Views/Doctor/index.html">Doctors</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/login" class="btn btn-login">Login</a></li>
+            <li><a href="/register" class="btn btn-register">Register</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="appointment-section">
+            <div class="form-container">
+                <h2>Apply For Free Now</h2>
+                <form id="appointment-form">
+                    <input type="text" placeholder="Patient Name*" required>
+                    <input type="email" placeholder="Email Address*" required>
+                    <select>
+                        <option>Select Department</option>
+                        <option>Cardiology</option>
+                        <option>Dermatology</option>
+                        <option>Neurology</option>
+                        <!-- More department options -->
+                    </select>
+                    <select>
+                        <option>Select Doctor</option>
+                        <option>Dr. Smith</option>
+                        <option>Dr. Jones</option>
+                        <!-- More doctor options -->
+                    </select>
+                    <input type="date" placeholder="MM/DD/YYYY" required>
+                    <input type="time" required>
+                    <button type="submit">Book Appointment</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Phone: (656) 456-7890</p>
+                <p>Email: hospital@example.com</p>
+                <p>Address: 6225 Main St, Tampa</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MadiFax. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script> <!-- If you have JavaScript functionality -->
+</body>
+</html>

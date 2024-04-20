@@ -7,70 +7,43 @@
     <link rel="stylesheet" href="/Users/raajithasai/Projects/Assignment_LookAndFeel/css/main.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div id="logo">Hospital</div>
-            <div id="nav-links">
-                <a href="#doctors">Doctors</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div id="user-links">
-                <a href="#register">Register</a>
-                <a href="#login">Log in</a>
-            </div>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="welcome">
-            <h1>Welcome to Hospital</h1>
-            <p>Where Care Comes First</p>
-        </section>
-
-        <!-- Other HTML code remains the same -->
-
-<section id="find-doctors" class="info-section">
-    <div class="info-image">
-        <img src="/Users/raajithasai/Projects/Assignment_LookAndFeel/img/d1.jpeg" alt="Doctors">
+    <nav>
+        <ul>
+            <li><a href="/Users/raajithasai/Projects/Assignment_LookAndFeel/index.html">Hospital</a></li>
+            <li><a href="/Users/raajithasai/Projects/Assignment_LookAndFeel/Views/Doctor/index.html">Doctors</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/login" class="btn btn-login">Login</a></li>
+            <li><a href="/register" class="btn btn-register">Register</a></li>
+        </ul>
+    </nav>
+    <div class="jumbotron">
+        <h2>Welcome to Hospital</h2>
+        <p class="lead">Where Care Comes First</p>
+        <a href="#" class="btn btn-primary btn-large">Learn more »</a>
     </div>
-    <div class="info-content">
-        <h2>Find Doctors</h2>
-        <p>Get the best in health care with the help of our highly qualified doctors. Click the button below to get started.</p>
-        <button onclick="findDoctors()">Find Doctors »</button>
+
+    <div class="row">
+        <div class="col-md-4">
+            <img src="/Users/raajithasai/Projects/Assignment_LookAndFeel/img/finddoctors.png" alt="Find Doctors">
+            <h2>Find Doctors</h2>
+            <p>Get the best in health care with the help of our highly qualified doctors. Click the button below to get started.</p>
+            <a class="btn btn-default" href="/Users/raajithasai/Projects/Assignment_LookAndFeel/Views/Doctor/index.html">Find Doctors »</a>
+        </div>
+
+        <div class="col-md-4">
+            <img src="/Users/raajithasai/Projects/Assignment_LookAndFeel/img/appointment.png" alt="Create Appointments">
+            <h2>Create Appointments</h2>
+            <p>Get started! Your appointment is just a few clicks away.</p>
+            <a class="btn btn-default" href="/Users/raajithasai/Projects/Assignment_LookAndFeel/Views/Appointment/AppointmentIndex.html">Create now »</a>
+        </div>
+
+        <div class="col-md-4">
+            <img src="/Users/raajithasai/Projects/Assignment_LookAndFeel/img/statistics.png" alt="View Statistics">
+            <h2>View Statistics</h2>
+            <p>Want to know how well we are doing? Check it out yourself.</p>
+            <a class="btn btn-default" href="#">Show Statistics »</a>
+        </div>
     </div>
-</section>
-
-<section id="create-appointments" class="info-section">
-    <div class="info-image">
-        <img src="/Users/raajithasai/Projects/Assignment_LookAndFeel/img/d2.jpeg" alt="Appointments">
-    </div>
-    <div class="info-content">
-        <h2>Create Appointments</h2>
-        <p>Setting up appointments has never been so easy. It's just a registration and a few clicks away.</p>
-        <button onclick="createAppointment()">Create now »</button>
-    </div>
-</section>
-
-<section id="view-statistics" class="info-section">
-    <div class="info-image">
-        <img src="/Users/raajithasai/Projects/Assignment_LookAndFeel/img/d3.jpeg" alt="Statistics">
-    </div>
-    <div class="info-content">
-        <h2>View Statistics</h2>
-        <p>Want to know how well we are doing? Check it out yourself.</p>
-        <button onclick="viewStatistics()">Show Statistics »</button>
-    </div>
-</section>
-
-<!-- Other HTML code remains the same -->
-
-    </main>
-
-    <footer>
-        <p>© 2024 Hospital. All rights reserved.</p>
-    </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
