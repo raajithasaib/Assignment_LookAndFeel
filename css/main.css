@@ -1,3 +1,4 @@
+
 /* Basic styling for the navigation menu */
 nav ul {
   list-style: none;
@@ -95,99 +96,142 @@ nav a:hover {
   color: #fff;
 }
 /* Styling for the appointment form */
-.form-container {
-    width: 50%;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.form-container h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.form-container form {
-    margin-bottom: 20px;
-}
-
-.form-container label {
-    font-weight: bold;
-}
-
-.form-container input,
-.form-container select,
-.form-container textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.form-container input[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-.form-container input[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-/* Styling for login and register buttons */
-.btn-login, .btn-register {
-  background-color: #56bb8a;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-.btn-login:hover, .btn-register:hover {
-  background-color: #56bb8a;
-}
-
-
-/* Basic Styling for Footer */
+/* Footer Styles */
 footer {
-  background-color: #56bb8a;
-  color: #333;
+  background-color: #5a5757;
+  color: #fff;
   padding: 20px 0;
-  font-size: 15px;
 }
 
-.footer-container {
+footer main {
   display: flex;
-  justify-content: space-around;
-  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
   padding: 0 20px;
 }
 
+.contact-container {
+  display: flex;
+  width: 90%;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact-section,
+.contact-details {
+  flex: 1 1 45%; /* Each section will take up 45% of the container width */
+  margin: 10px;
+}
+
+.contact-section {
+  max-width: 600px;
+}
+
+.contact-details {
+  max-width: 350px;
+}
+
+/* Form Styles */
+form {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  margin-top: 5px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #008cba;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #007ba7;
+}
+
+/* Contact Details and Social Links */
 .footer-section h4 {
-  color: #000;
   margin-bottom: 10px;
 }
 
-.footer-section ul,
 .footer-section p {
-  list-style: none;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
   padding: 0;
 }
 
-.footer-section ul li a,
-.footer-section {
-  color: #555;
-  text-decoration: none;
-  transition: color 0.3s;
+.social-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #555;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
 }
 
-.footer-section ul li a:hover,
-.footer-section a:hover {
-  color: #007bff;
+.social-icon:hover {
+  background-color: #666;
+}
+
+.social-icon i {
+  color: white;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  footer main {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .contact-section,
+  .contact-details {
+      flex-basis: 100%;
+      max-width: 100%;
+      margin-right: 20px;
+  }
+
+  .social-links {
+      justify-content: space-around;
+      width: 100%;
+  }
 }
