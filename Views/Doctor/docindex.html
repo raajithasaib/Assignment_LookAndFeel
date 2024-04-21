@@ -104,6 +104,30 @@
 
    
     <br><br><br><br><br>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButton = document.querySelector('.filters button');
+            const filterSelect = document.querySelector('.filters select');
+            const tableRows = document.querySelectorAll('table tbody tr');
+
+            function filterTable() {
+                const filterValue = filterSelect.value.toLowerCase();
+
+                tableRows.forEach(row => {
+                    const departmentCellText = row.cells[2].textContent.toLowerCase(); // Assuming department is in the 3rd cell
+                    if (filterValue === 'all' || departmentCellText.includes(filterValue)) {
+                        row.style.display = ''; // Show row
+                    } else {
+                        row.style.display = 'none'; // Hide row
+                    }
+                });
+            }
+
+            filterButton.addEventListener('click', filterTable);
+            // Optional: Add event listener for select change for instant filtering
+            filterSelect.addEventListener('change', filterTable);
+        });
+    </script>
 
 </body>
 

@@ -1,13 +1,20 @@
-/* Basic styling for the navigation menu */
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   background-color: #56bb8a;
   padding: 10px;
+  gap: 20px;
 }
 nav li {
   margin-right: 20px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+nav li img{
+  padding-left: 20px;
+  height: 40px;
+  width: 40px;
 }
 nav a {
   text-decoration: none;
@@ -16,29 +23,16 @@ nav a {
   transition: color 0.3s;
 }
 nav a:hover {
-  color: #56bb8a;
+  color: #b9c0bc;
 }
 
-/* Basic styling for the navigation menu */
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    background-color: #56bb8a;
-    padding: 10px;
-  }
-  nav li {
-    margin-right: 20px;
-  }
-  nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  nav a:hover {
-    color: #56bb8a;
-  }
+nav ul li a.btn:hover {
+  background-color: #56bb8a; /* Darker shade on hover */
+}
+
+nav ul li a.btn.btn-register {
+  background-color: #56bb8a; /* for the 'Register' button */
+}
   
 .form-horizontal {
     max-width: 600px;
