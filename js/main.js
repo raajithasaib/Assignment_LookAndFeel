@@ -12,3 +12,4 @@ function viewStatistics() {
   // Implement the logic to view statistics
   alert("Redirecting to view statistics...");
 }
+

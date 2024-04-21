@@ -4,36 +4,27 @@ body {
     margin: 0;
     padding: 0;
 }
-
-/* Header and navigation */
-header {
+/* Basic styling for the navigation menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
     background-color: #56bb8a;
     padding: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-nav li {
-    margin-left: 20px;
-}
-
-nav a {
-    color: white;
+  }
+  nav li {
+    margin-right: 20px;
+  }
+  nav a {
     text-decoration: none;
-    padding: 10px;
-    transition: background-color 0.3s;
-}
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #56bb8a;
+  }
 
-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
 
 /* Main content */
 main {

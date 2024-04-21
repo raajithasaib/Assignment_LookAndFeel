@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log in</title>
+    <link rel="stylesheet" href="/Users/Afrah/Documents/GitHub/Assignment_LookAndFeel/css/login.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/Users/Afrah/Documents/GitHub/Assignment_LookAndFeel/index.html">Home</a></li>
+            <li><a href="/Users/Afrah/Documents/GitHub/Assignment\_LookAndFeel/Views/Doctor/DocIndex.html">Doctors</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/Users/Afrah/Documents/GitHub/Assignment\_LookAndFeel/Views/Account/Login.html" class="btn btn-login">Login</a></li>
+            <li><a href="/Users/Afrah/Documents/GitHub/Assignment_LookAndFeel/Views/Account/Register.html" class="btn btn-register">Register</a></li>
+        </ul>
+    </nav>
+    <h2>Log in now!</h2>
+    <div class="row">
+        <div class="col-md-8">
+            <section id="loginForm">
+                <form action="/Account/Login" method="post" class="form-horizontal" role="form">
+                    <input type="hidden" name="ReturnUrl" value="/" />
+                    <h4>Fill in your details below to login </h4>
+                    <hr />
+                    <div class="form-group">
+                        <label for="UserName" class="col-md-2 control-label">User Name</label>
+                        <div class="col-md-10">
+                            <input type="text" id="UserName" name="UserName" class="form-control" />
+                            <span class="field-validation-valid" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Password" class="col-md-2 control-label">Password</label>
+                        <div class="col-md-10">
+                            <input type="password" id="Password" name="Password" class="form-control" />
+                            <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <div class="checkbox">
+                                <input type="checkbox" id="RememberMe" name="RememberMe" value="true" />
+                                <label for="RememberMe">Remember Me</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Log in" class="btn btn-default" />
+                        </div>
+                    </div>
+                    <p>
+                        <a href="/Users/Afrah/Documents/GitHub/Assignment_LookAndFeel/Views/Account/Register.html">Register</a> If you don't have an account.
+                    </p>
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="/Users/Afrah/Documents/GitHub/Assignment_LookAndFeel/js/login.js"></script>
+</body>
+</html>

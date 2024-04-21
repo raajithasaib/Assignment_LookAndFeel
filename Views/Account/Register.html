@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="/Users/Afrah/Documents/GitHub/Assignment_LookAndFeel/css/register.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/Users/Afrah/Documents/GitHub/Assignment_LookAndFeel/index.html">Home</a></li>
+            <li><a href="../Views/Doctor/DocIndex.html">Doctors</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="Login.html" class="btn btn-login">Login</a></li>
+            <li><a href="/Users/Afrah/Documents/GitHub/Assignment_LookAndFeel/Views/Account/Register.html" class="btn btn-register">Register</a></li>
+        </ul>
+    </nav>
+    <h2>Register Now!</h2>
+    <form id="registerForm" method="post" class="form-horizontal" role="form">
+        <input type="hidden" name="__RequestVerificationToken" value="...">
+        <h4>Fill in the details below to create an account:</h4>
+        <hr>
+        <div class="validation-summary-valid" data-valmsg-summary="true"></div>
+        <div class="form-group">
+            <label for="Name" class="col-md-2 control-label">Name</label>
+            <div class="col-md-10">
+                <input type="text" id="Name" name="Name" class="form-control">
+                <span class="field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="UserName" class="col-md-2 control-label">User Name</label>
+            <div class="col-md-10">
+                <input type="text" id="UserName" name="UserName" class="form-control">
+                <span class="field-validation-valid" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Password" class="col-md-2 control-label">Password</label>
+            <div class="col-md-10">
+                <input type="password" id="Password" name="Password" class="form-control">
+                <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="ConfirmPassword" class="col-md-2 control-label">Confirm Password</label>
+            <div class="col-md-10">
+                <input type="password" id="ConfirmPassword" name="ConfirmPassword" class="form-control">
+                <span class="field-validation-valid" data-valmsg-for="ConfirmPassword" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="BirthDate" class="col-md-2 control-label">Birth Date</label>
+            <div class="col-md-10">
+                <input type="date" id="BirthDate" name="BirthDate" class="form-control">
+                <span class="field-validation-valid" data-valmsg-for="BirthDate" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Sex" class="col-md-2 control-label">Sex</label>
+            <div class="col-md-10">
+                <select id="Sex" name="Sex" class="form-control">
+                    <option value="">-- Select --</option>
+                    <option value="0">Male</option>
+                    <option value="1">Female</option>
+                </select>
+                <span class="field-validation-valid" data-valmsg-for="Sex" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" class="btn btn-default" value="Register">
+            </div>
+        </div>
+    </form>
+    <script src="/Users/Afrah/Documents/GitHub/Assignment_LookAndFeel/js/register.js"></script>
+</body>
+</html>

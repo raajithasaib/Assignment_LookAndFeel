@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Appointment</title>
+    <link rel="stylesheet" type="text/css" href="/Users/Afrah/Documents/GitHub/Assignment_LookAndFeel/css/appointmentindex.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/Users/Afrah/Documents/GitHub/Assignment_LookAndFeel/index.html">Home</a></li>
+                <li><a href="/Users/Afrah/Documents/GitHub/Assignment_LookAndFeel/Views/Doctor/DocIndex.html">Doctors</a></li>
+                <li><a href="/Users/Afrah/Documents/GitHub/Assignment_LookAndFeel/Views/Appointment/Details.html">My Appointments</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">My account</a></li>
+                <li><a href="/Users/Afrah/Documents/GitHub/Assignment_LookAndFeel/index.html">Log out</a></li>
+            </ul>
+        </nav>
+    </header>
+<div class="row">
+    <div class="col-md-12">
+        <h1>Edit your appointment</h1>
+        <form>
+            <label for="doctor">Doctor</label>
+            <select id="DoctorID" name="DoctorID">
+                <option value="">--Select Doctor--</option>
+                <option value="1">Dr.Asfi</option>
+                <option value="2">Dr.Danny</option>
+                <option value="3">Dr.Joey</option>
+                <option value="4">Dr.Kenneth</option>
+                <option value="5">Dr.Maria</option>
+                <option value="6">Dr.Shelly</option>
+            </select>
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date">
+
+            <label for="time">Time</label>
+            <select id="Time" name="Time" class="form-control">
+                <option value="8am">8:00 AM to 8:30 AM</option>
+                <option value="9am">9:00 AM to 9:30 AM</option>
+                <option value="10am">10:00 AM to 10:30 AM</option>
+                <option value="11am">11:00 AM to 11:30 AM</option>
+                <option value="12pm">12:00 PM to 12:30 PM</option>
+            </select>
+
+            <button type="submit">Save</button>
+        </form>
+    </div>
