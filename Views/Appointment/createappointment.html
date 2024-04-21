@@ -2,9 +2,19 @@
 <html>
 <head>
     <title>Create</title>
-    <link rel="stylesheet" href="/Users/Afrah/Documents/GitHub/Assignment_LookAndFeel/css/appointmentindex.css">
+    <link rel="stylesheet" href="../../css/appointmentindex.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Views/Doctor/docindex.html">Doctors</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="Views/Account/Login.html" class="btn btn-login">Login</a></li>
+            <li><a href="Views/Account/Register.html" class="btn btn-register">Register</a></li>
+        </ul>
+    </nav>
+    <br><br>
     <h2>Create</h2>
 
     <form id="appointmentForm" action="/Appointment/Create" method="post">
@@ -106,9 +116,28 @@
                 event.preventDefault(); // Prevent the default form submission
 
                 // Simulate the redirection to the details page
-                window.location.href = "/Users/Afrah/Documents/GitHub/Assignment_LookAndFeel/Views/Appointment/Details.html"; // Replace "1234" with the appropriate appointment ID
+                window.location.href = "../Views/Appointment/Details.html"; // Replace "1234" with the appropriate appointment ID
             });
         });
     </script>
+ <br><br><br><br><br>
 </body>
+<footer>
+    <div class="footer-container">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: support@docappointments.com</p>
+                <p>Phone: +1 234 567 8900</p>
+                <p>Address: 123 Health St, Wellness City</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                   <p><a href="https://facebook.com">Facebook</a></pr>
+                   <p><a href="https://twitter.com">Twitter</a></p>
+                    <p><a href="https://instagram.com">Instagram</a></p>
+                </div>
+            </div>
+    </div>
+</footer>
 </html>

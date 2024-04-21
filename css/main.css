@@ -2,12 +2,18 @@
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   background-color: #56bb8a;
   padding: 10px;
 }
 nav li {
   margin-right: 20px;
+  font-size: 20px;
+}
+nav li img{
+  padding-left: 20px;
+  height: 40px;
+  width: 40px;
 }
 nav a {
   text-decoration: none;
@@ -143,3 +149,43 @@ nav a:hover {
   background-color: #56bb8a;
 }
 
+
+/* Basic Styling for Footer */
+footer {
+  background-color: #56bb8a;
+  color: #333;
+  padding: 20px 0;
+  font-size: 15px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section h4 {
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.footer-section ul,
+.footer-section p {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a,
+.footer-section {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover,
+.footer-section a:hover {
+  color: #007bff;
+}
