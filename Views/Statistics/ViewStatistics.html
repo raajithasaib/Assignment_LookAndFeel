@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors</title>
+    <link rel="stylesheet" href="../../css/statistics.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="../../img/logo.png"></li>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../Views/Doctor/docindex.html">Doctors</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Appointment Analytics Dashboard</h1><br><br>
+        <section class="chart-section">
+            <h2>Appointments Per Doctor</h2>
+            <canvas id="appointmentsPerDoctor"></canvas>
+            <div class="insights">
+                <p>This bar chart represents the number of appointments each doctor has over a given period. It helps to identify workload distribution among doctors and can aid in scheduling and resource allocation.</p>
+            </div>
+        </section>
+        
+        <section class="chart-section">
+            <h2>Monthly Appointments Trend</h2>
+            <canvas id="appointmentsOverTime"></canvas>
+            <div class="insights">
+                <p>This line chart shows the trend of total appointments made each month. It's valuable for spotting seasonal trends and understanding the overall growth or decline in appointment volumes.</p>
+            </div>
+        </section>
+
+   </main>
+    <br><br><br><br><br>
+
+</body>
+
+<footer>
+    <div class="footer-container">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: support@docappointments.com</p>
+                <p>Phone: +1 234 567 8900</p>
+                <p>Address: 123 Health St, Wellness City</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                   <p><a href="https://facebook.com">Facebook</a></pr>
+                   <p><a href="https://twitter.com">Twitter</a></p>
+                    <p><a href="https://instagram.com">Instagram</a></p>
+                </div>
+            </div>
+    </div>
+</footer>
+</html>
