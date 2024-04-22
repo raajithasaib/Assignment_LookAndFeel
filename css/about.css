@@ -111,3 +111,17 @@ nav a:hover {
     width: auto;
     margin: 20px;
 }
+
+.git{
+    
+    max-width: 800px;
+    align-items: center;
+    margin: auto auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+ .git h2{
+    align-items: center;
+ }
