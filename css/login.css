@@ -1,6 +1,12 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+main{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    background-image: url('../img/DoctorAppointment.jpg'); /* Update the relative path to where your image is stored */
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 nav ul {
     list-style: none;
@@ -8,10 +14,12 @@ nav ul {
     justify-content: start;
     background-color: #56bb8a;
     padding: 10px;
-    gap: 15px;
+    gap: 20px;
   }
   nav li {
     margin-right: 20px;
+    font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
   }
   nav li img {
     padding-left: 20px;
@@ -29,7 +37,7 @@ nav ul {
   }
 
 .row {
-    max-width: 800px;
+    width: 400px;
     margin: 0 auto;
     padding: 20px;
     background-color: #ffffff;
@@ -37,9 +45,8 @@ nav ul {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    text-align: center;
-    color: #333333;
+h1 {
+  margin-bottom: 20px;
 }
 
 .form-group {

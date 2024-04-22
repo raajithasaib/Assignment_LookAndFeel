@@ -1,20 +1,23 @@
 /* Reset and typography */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
 }
 /* Basic styling for the navigation menu */
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: start;
-    background-color: #56bb8a;
-    padding: 10px;
-  }
-  nav li {
-    margin-right: 20px;
-  }
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  background-color: #56bb8a;
+  padding: 10px;
+  gap: 20px;
+}
+nav li {
+  margin-right: 20px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
   nav li img{
     padding-left: 20px;
     height: 40px;

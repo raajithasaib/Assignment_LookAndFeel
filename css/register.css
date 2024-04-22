@@ -2,23 +2,31 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
 }
-
+main{
+  
+    background-image: url('../img/DoctorAppointment.jpg'); /* Update the relative path to where your image is stored */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: start;
-    background-color: #56bb8a;
-    padding: 10px;
-    gap: 15px;
-  }
-  nav li {
-    margin-right: 15px;
-  }
-  nav li img{
-    padding-left: 20px;
-    height: 40px;
-    width: 40px;
-  }
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  background-color: #56bb8a;
+  padding: 10px;
+  gap: 20px;
+}
+nav li {
+  margin-right: 20px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+nav li img{
+  padding-left: 20px;
+  height: 40px;
+  width: 40px;
+}
   nav a {
     text-decoration: none;
     color: #fff;
@@ -31,7 +39,7 @@ nav ul {
 
 h2 {
     text-align: center;
-    color: #333333;
+    color: white;
 }
 
 form {
