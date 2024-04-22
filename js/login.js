@@ -31,7 +31,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
         const isLoggedIn = authenticateUser(username, password);
         if (isLoggedIn) {
             // Redirect to the dashboard page after successful login
-            window.location.href = '/Users/Afrah/Documents/GitHub/Assignment_LookAndFeel/index.html';
+            window.location.href = '../../Views/Account/Myaccount.html';
         } else {
             alert('Invalid username or password');
         }
