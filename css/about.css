@@ -1,0 +1,110 @@
+/* Basic styling for the navigation menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    background-color: #56bb8a;
+    padding: 10px;
+  }
+  nav li {
+    margin-right: 20px;
+  }
+  nav li img{
+    padding-left: 20px;
+    height: 40px;
+    width: 40px;
+  }
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #56bb8a;
+  }
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    background-image: url("../../Assignment_LookAndFeel/img/DoctorAppointment.jpg"); /* Add the path to your background image */
+    /* padding-left: 11em;
+    padding-right: 20em; */
+    padding: 0;
+    background-size: cover; /* This will make the image cover the entire body */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-position: center; /* This will center the image */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: justify;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* About Section Styles */
+.about {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.team-member {
+    flex: 200px;
+    text-align: center;
+    margin: 20px;
+}
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    margin: 10px 0;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #666;
+}
+.team-member h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.section {
+    text-align: center;
+    width: auto;
+    margin: 20px;
+}
