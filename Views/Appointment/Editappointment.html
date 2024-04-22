@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Appointment</title>
+    <link rel="stylesheet" type="text/css" href="../../css/appointmentindex.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Views/Doctor/docindex.html">Doctors</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="Views/Account/Login.html" class="btn btn-login">Login</a></li>
+                <li><a href="Views/Account/Register.html" class="btn btn-register">Register</a></li>
+            </ul>
+        </nav>
+        <br><br>
+    </header>
+<div class="row">
+    <div class="col-md-12">
+        <h1>Edit your appointment</h1>
+        <form>
+            <label for="doctor">Doctor</label>
+            <select id="DoctorID" name="DoctorID">
+                <option value="">--Select Doctor--</option>
+                <option value="1">Dr.Asfi</option>
+                <option value="2">Dr.Danny</option>
+                <option value="3">Dr.Joey</option>
+                <option value="4">Dr.Kenneth</option>
+                <option value="5">Dr.Maria</option>
+                <option value="6">Dr.Shelly</option>
+            </select>
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date">
+
+            <label for="time">Time</label>
+            <select id="Time" name="Time" class="form-control">
+                <option value="8am">8:00 AM to 8:30 AM</option>
+                <option value="9am">9:00 AM to 9:30 AM</option>
+                <option value="10am">10:00 AM to 10:30 AM</option>
+                <option value="11am">11:00 AM to 11:30 AM</option>
+                <option value="12pm">12:00 PM to 12:30 PM</option>
+            </select>
+
+            <button type="submit">Save</button>
+        </form>
+    </div>
+</div>
+<br><br><br><br><br>
+</body>
+<footer>
+    <div class="footer-container">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: support@docappointments.com</p>
+                <p>Phone: +1 234 567 8900</p>
+                <p>Address: 123 Health St, Wellness City</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                   <p><a href="https://facebook.com">Facebook</a></pr>
+                   <p><a href="https://twitter.com">Twitter</a></p>
+                    <p><a href="https://instagram.com">Instagram</a></p>
+                </div>
+            </div>
+    </div>
+</footer>

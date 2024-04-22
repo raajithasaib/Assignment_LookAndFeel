@@ -3,48 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Hospital Page</title>
-    <link rel="stylesheet" href="/Users/Afrah/Documents/GitHub/Assignment_LookAndFeel/css/main.css">
+    <title>Welcome to HealHive</title>
+    <link rel="icon" type="image/x-icon" href="../../img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="/Users/Afrah/Documents/GitHub/Assignment_LookAndFeel/index.html">Hospital</a></li>
-            <li><a href="/Users/Afrah/Documents/GitHub/Assignment_LookAndFeel/Views/Doctor/DocIndex.html">Doctors</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/login" class="btn btn-login">Login</a></li>
-            <li><a href="/register" class="btn btn-register">Register</a></li>
+            <li><img src="img/logo.png"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Views/Doctor/docindex.html">Doctors</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#contact-section">Contact Us</a></li>
+            <li><a href="Views/Account/Login.html" class="btn btn-login">Login</a></li>
+            <li><a href="Views/Account/Register.html" class="btn btn-register">Register</a></li>
         </ul>
     </nav>
     <div class="jumbotron">
-        <h2>Welcome to Hospital</h2>
+        <h2>Welcome to HealHive</h2>
         <p class="lead">Where Care Comes First</p>
-        <a href="#" class="btn btn-primary btn-large">Learn more »</a>
+        <a href="#contact-section" class="btn btn-primary btn-large">Learn more »</a>
     </div>
 
     <div class="row">
         <div class="col-md-4">
-            <img src="/Users/Afrah/Documents/GitHub/Assignment_LookAndFeel/img/finddoctors.png" alt="Find Doctors">
+            <img src="img/finddoctors.png" alt="Find Doctors">
             <h2>Find Doctors</h2>
             <p>Get the best in health care with the help of our highly qualified doctors. Click the button below to get started.</p>
-            <a class="btn btn-default" href="#">Find Doctors »</a>
+            <a class="btn btn-default" href="Views/Doctor/docindex.html">Find Doctors »</a>
         </div>
 
         <div class="col-md-4">
-            <img src="/Users/Afrah/Documents/GitHub/Assignment_LookAndFeel/img/appointment.png" alt="Create Appointments">
+            <img src="img/appointment.jpeg" alt="Create Appointments">
             <h2>Create Appointments</h2>
             <p>Get started! Your appointment is just a few clicks away.</p>
-            <a class="btn btn-default" href="/Users/Afrah/Documents/GitHub/Assignment_LookAndFeel/Views/Appointment/AppointmentIndex.html">Create now »</a>
+            <a class="btn btn-default" href="Views/Appointment/AppointmentIndex.html">Create now »</a>
         </div>
 
         <div class="col-md-4">
-            <img src="/Users/Afrah/Documents/GitHub/Assignment_LookAndFeel/img/statistics.png" alt="View Statistics">
+            <img src="img/statistics.png" alt="View Statistics">
             <h2>View Statistics</h2>
             <p>Want to know how well we are doing? Check it out yourself.</p>
-            <a class="btn btn-default" href="#">Show Statistics »</a>
+            <a class="btn btn-default" href="Views/Statistics/ViewStatistics.html">Show Statistics »</a>
         </div>
     </div>
-    
+    <br><br><br><br><br>
 </body>
+<footer>
+    <main>
+        <div id="contact-section" class="contact-container">
+            <form id="contactForm" class="contact-section">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </form>
+            <div class="contact-details">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: support@docappointments.com</p>
+                    <p>Phone: +1 234 567 8900</p>
+                    <p>Address: 123 Health St, Wellness City</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</footer>
 </html>
