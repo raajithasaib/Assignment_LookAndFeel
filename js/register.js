@@ -1,7 +1,6 @@
 // Form validation
 document.querySelector('#registerForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the form from submitting
-
     // Get the form values
     const name = document.getElementById('Name').value.trim();
     const username = document.getElementById('UserName').value.trim();
@@ -9,7 +8,7 @@ document.querySelector('#registerForm').addEventListener('submit', function(even
     const confirmPassword = document.getElementById('ConfirmPassword').value.trim();
     const birthDate = document.getElementById('BirthDate').value;
     const sex = document.getElementById('Sex').value;
-
+  
     // Perform client-side validation
     let isValid = true;
     const nameError = document.querySelector('#Name + .field-validation-valid');
@@ -18,56 +17,72 @@ document.querySelector('#registerForm').addEventListener('submit', function(even
     const confirmPasswordError = document.querySelector('#ConfirmPassword + .field-validation-valid');
     const birthDateError = document.querySelector('#BirthDate + .field-validation-valid');
     const sexError = document.querySelector('#Sex + .field-validation-valid');
-
+  
     if (name === '') {
-        isValid = false;
-        nameError.textContent = 'Please enter your name.';
+      isValid = false;
+      nameError.textContent = 'Please enter your name.';
     } else {
-        nameError.textContent = '';
+      nameError.textContent = '';
     }
-
+  
     if (username === '') {
-        isValid = false;
-        usernameError.textContent = 'Please enter a username.';
+      isValid = false;
+      usernameError.textContent = 'Please enter a username.';
     } else {
-        usernameError.textContent = '';
+      usernameError.textContent = '';
     }
-
+  
     if (password === '') {
-        isValid = false;
-        passwordError.textContent = 'Please enter a password.';
+      isValid = false;
+      passwordError.textContent = 'Please enter a password.';
     } else {
-        passwordError.textContent = '';
+      passwordError.textContent = '';
     }
-
+  
     if (confirmPassword === '') {
-        isValid = false;
-        confirmPasswordError.textContent = 'Please confirm your password.';
+      isValid = false;
+      confirmPasswordError.textContent = 'Please confirm your password.';
     } else {
-        confirmPasswordError.textContent = '';
+      confirmPasswordError.textContent = '';
     }
-
+  
     if (birthDate === '') {
-        isValid = false;
-        birthDateError.textContent = 'Please enter your birth date.';
+      isValid = false;
+      birthDateError.textContent = 'Please enter your birth date.';
     } else {
-        birthDateError.textContent = '';
+      birthDateError.textContent = '';
     }
-
+  
     if (sex === '') {
-        isValid = false;
-        sexError.textContent = 'Please select your sex.';
+      isValid = false;
+      sexError.textContent = 'Please select your sex.';
     } else {
-        sexError.textContent = '';
+      sexError.textContent = '';
     }
-
+  
     if (password !== confirmPassword) {
-        isValid = false;
-        confirmPasswordError.textContent = 'Passwords do not match.';
+      isValid = false;
+      confirmPasswordError.textContent = 'Passwords do not match.';
     }
-
+  
     // If the form is valid, submit it
     if (isValid) {
-        this.submit();
+      // Simulate successful registration (replace this with your actual registration logic)
+      const isRegistered = registerUser(name, username, password, birthDate, sex);
+      if (isRegistered) {
+        // Show an alert message
+        alert('You are registered successfully!');
+        // Redirect to the login page after successful registration
+        window.location.href = '../Account/Login.html';
+      } else {
+        alert('Registration failed. Please try again.');
+      }
     }
-});
+  });
+  
+  // Function to simulate user registration (replace this with your actual registration logic)
+  function registerUser(name, username, password, birthDate, sex) {
+    // Here you would typically make an AJAX request to your server to register the user
+    // For this example, we'll simply return true to simulate successful registration
+    return true;
+  }

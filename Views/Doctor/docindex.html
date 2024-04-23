@@ -17,6 +17,168 @@
                 <li><a href="../../Views/Home/About.html">About Us</a></li>
                 <li><a href="../../Views/Account/Login.html">Log in</a></li>
                 <li><a href="../../Views/Account/Register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Our Team</h1>
+        <div class="filters">
+            <input type="text" placeholder="Title">
+            <select>
+                <option value="all">All</option>
+                <option value="Emergency">Emergency</option>
+                <option value="Dentistry">Dentistry</option>
+                <option value="Neurology">Neurology</option>
+                <option value="Radiology">Radiology</option>
+                <option value="Dietician">Dietician</option>
+                <option value="Gynecology">Gynecology</option>
+            </select>
+            <button id="clearButton">Clear</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Doctor's Name</th>
+                    <th>Sex</th>
+                    <th>Department</th>
+                    <th>Degree</th>
+                    <th>Open for appointments</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dr.Asfi </td>
+                    <td>Male</td>
+                    <td>Emergency</td>
+                    <td>MBBS,FRCEM</td>
+                    <td>Yes</td>
+                    <td><a href="../../Views/Appointment/AppointmentIndex.html">Create Appointment</a></td>
+                </tr>
+                <tr>
+                    <td>Dr.Danny</td>
+                    <td>Female</td>
+                    <td>Dentistry</td>
+                    <td>DDS</td>
+                    <td>Yes</td>
+                    <td><a href="../../Views/Appointment/AppointmentIndex.html">Create Appointment</a></td>
+                </tr>
+                <tr>
+                    <td>Dr.Joey</td>
+                    <td>Male</td>
+                    <td>Neurology</td>
+                    <td>MBBS,MD</td>
+                    <td>Yes</td>
+                    <td><a href="../../Views/Appointment/AppointmentIndex.html">Create Appointment</a></td>
+                </tr>
+                <tr>
+                    <td>Dr.Kenneth</td>
+                    <td>Male</td>
+                    <td>Radiology</td>
+                    <td>MBBS,DO</td>
+                    <td>Yes</td>
+                    <td><a href="../../Views/Appointment/AppointmentIndex.html">Create Appointment</a></td>
+                </tr>
+                <tr>
+                    <td>Dr.Maria</td>
+                    <td>Female</td>
+                    <td>Gynecology</td>
+                    <td>MBBS,MD</td>
+                    <td>Yes</td>
+                    <td><a href="../../Views/Appointment/AppointmentIndex.html">Create Appointment</a></td>
+                </tr>
+                <tr>
+                    <td>Dr.Shelly</td>
+                    <td>Female</td>
+                    <td>Dietician</td>
+                    <td>MBBS,RDN</td>
+                    <td>Yes</td>
+                    <td><a href="../../Views/Appointment/AppointmentIndex.html">Create Appointment</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <br><br><br><br><br>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const clearButton = document.getElementById('clearButton');
+            const inputFilter = document.querySelector('.filters input[type="text"]');
+            const selectFilter = document.querySelector('.filters select');
+            const tableRows = document.querySelectorAll('table tbody tr');
+
+            clearButton.addEventListener('click', function() {
+                inputFilter.value = ''; // Clear the text input
+                selectFilter.selectedIndex = 0; // Reset the select to the first option (typically "All")
+                filterTable(); // Apply filter which will now reset to show all
+            });
+
+            function filterTable() {
+                const titleValue = inputFilter.value.toLowerCase();
+                const filterValue = selectFilter.value.toLowerCase();
+                tableRows.forEach(row => {
+                    const titleCellText = row.cells[0].textContent.toLowerCase(); // Assuming title is in the 1st cell
+                    const departmentCellText = row.cells[2].textContent.toLowerCase(); // Assuming department is in the 3rd cell
+                    if ((filterValue === 'all' || departmentCellText.includes(filterValue)) && titleCellText.includes(titleValue)) {
+                        row.style.display = ''; // Show row
+                    } else {
+                        row.style.display = 'none'; // Hide row
+                    }
+                });
+            }
+
+            inputFilter.addEventListener('keyup', filterTable);
+            selectFilter.addEventListener('change', filterTable);
+        });
+    </script>
+<!--script-->
+</body>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Email: support@docappointments.com</p>
+            <p>Phone: +1 234 567 8900</p>
+            <p>Address: 123 Health St, Wellness City</p>
+        </div>
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+                <p><a href="https://facebook.com">Facebook</a></p>
+                <p><a href="https://twitter.com">Twitter</a></p>
+                <p><a href="https://instagram.com">Instagram</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors</title>
+    <link rel="icon" type="image/x-icon" href="../../img/logo.png">
+    <link rel="stylesheet" href="../../css/doctorindex.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="../../img/logo.png"></li>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../Views/Doctor/docindex.html">Doctors</a></li>
+                <li><a href="../../Views/Home/About.html">About Us</a></li>
+                <li><a href="../../Views/Account/Login.html">Log in</a></li>
+                <li><a href="../../Views/Account/Register.html">Register</a></li>
                 
             </ul>
         </nav>
@@ -35,7 +197,7 @@
                 <option value="Dietician">Dietician</option>
                 <option value="Gynecology">Gynecology</option>
             </select>
-            <button>Filter</button>
+            <button id="clearbutton">Filter</button>
         </div>
 
         <table>
