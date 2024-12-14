@@ -1,6 +1,6 @@
 # HealHive - Simplifying Appointment Management
 
-HealHive is a web platform aimed at enhancing accessibility and efficiency in appointment management within the healthcare sector. Developed as part of the SM 6225 course, this project focuses on streamlining processes through a user-centric design and robust web development practices.
+HealHive is a web platform aimed at enhancing accessibility and efficiency in appointment management within the healthcare sector. Developed as part of the ISM 6225 course, this project focuses on streamlining processes through a user-centric design and robust web development practices.
 
 ## Team Members
 
